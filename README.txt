@@ -16,3 +16,17 @@ MAIN PC:
 This is still LAN-only. Do not expose ports 5051/5052 to the Internet yet.
 
 Clipboard integration is NOT enabled in v0.6. It will be integrated after the core authenticated remote session is verified.
+
+
+RemoteDesk v1.3.2 - Keyboard Shortcut Focus Fix
+
+Fixed remote keyboard shortcut handling.
+
+The Main PC remote screen now receives keyboard events with bind_all,
+and clicking the remote screen gives it keyboard focus.
+
+This fixes shortcuts such as:
+Ctrl+C, Ctrl+V, Ctrl+X, Ctrl+A, Ctrl+Z, Ctrl+S.
+
+The IP/username/password fields remain local and are not sent to the Target.
+Clipboard/file/folder sharing remains bidirectional.
